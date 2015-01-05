@@ -7,7 +7,7 @@
   :components
   ((:file "package")
    (:file "messages" :depends-on ("package")))
-  :depends-on (:packet :ms-dtyp))
+  :depends-on (:packet :cl-dtyp))
 
 
 

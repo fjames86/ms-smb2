@@ -602,13 +602,13 @@ When set in an SMB2 compound response, indicates that the request corresponding 
   ((timeout :uint32 :initform 0)
    (flags :uint32 :initform 0)
    (reserved (:uint8 8) :initform nil)
-   (create-guid ms-dtyp:guid :initform nil))
+   (create-guid cl-dtyp:guid :initform nil))
   (:packing 1))
 
 ;; 2.2.13.2.12 SMB2_CREATE_DURABLE_HANDLE_RECONNECT_V2 http://msdn.microsoft.com/en-us/library/hh553994.aspx
 (defpacket smb2-create-durable-handle-reconnect-v2 
   ((file-id smb2-file-id :initform nil)
-   (create-guid ms-dtyp:guid :initform nil)
+   (create-guid cl-dtyp:guid :initform nil)
    (flags :uint32 :initform 0))
   (:packing 1))
 
